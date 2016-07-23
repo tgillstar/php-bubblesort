@@ -127,7 +127,8 @@
                 <form name="bubblesort" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <div class="buttonBlock">
                         <input name="shuffle" id="btnShuffle" type="submit" value="Shuffle">
-                        <input name="step" id="btnStep" type="submit" value="Step" <?php if($_SESSION['disableBtn']==true){ echo 'disabled'; } else if ($_SESSION['disableBtn']=false){ echo ' '; } ?>>
+                        <input name="step" id="btnStep" type="submit" value="Step"
+                            <?php if($_SESSION['disableBtn']==true){ echo 'disabled'; } else if ($_SESSION['disableBtn']=false){ echo ' '; } ?>>
                     </div>
                     <div class="detailsInfo">
                             <div class="infoBlock">Index: <input type="text" name="current" id="current" value = "<?php echo $current;?>" readonly></div>
